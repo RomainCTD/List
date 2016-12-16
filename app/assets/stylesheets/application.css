@@ -1,15 +1,105 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+h1 {
+	margin: auto;
+	text-align: center;
+	font-family: helvetica, sans-serif;
+	margin-top: 13px;
+}
+
+body {
+  background-image: url("http://img11.hostingpics.net/pics/174172back1blurlum.jpg");
+    background-size: 100%;
+  color: white;
+  font-family: helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: auto;
+}
+
+p, ol, ul, td {
+  font-family: helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: white;
+}
+
+pre {
+  background-color: white;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: yellow;
+  text-decoration: none;
+
+  &:visited {
+    color: white;
+  }
+
+  &:hover {
+    color: white;
+  }
+}
+
+.plus{
+  padding-top: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+strong {
+  margin: auto;
+  text-align: center;
+}
+
+table {
+	margin: auto;
+}
+
+#notice {
+  color: white;
+  font-family: Courier;
+  font-style: italic, bold;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+img {
+	width: 100%;
+	max-height: 5em;
+
+}
+
+td {
+  padding-left: 45px;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+

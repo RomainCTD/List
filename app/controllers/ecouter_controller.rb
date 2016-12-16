@@ -1,0 +1,2 @@
+class EcouterController < ApplicationController
+end
