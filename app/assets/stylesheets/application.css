@@ -58,6 +58,16 @@ a {
   font-size: 30px;
 }
 
+#help {
+  font-size: 30px;
+  color: green;
+  position: absolute;
+  right: 35px;
+  height: 30px;
+  width: 30px;
+
+}
+
 table {
 	margin: auto;
 }
