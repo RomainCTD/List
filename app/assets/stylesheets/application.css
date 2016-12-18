@@ -53,6 +53,7 @@ a {
 
 .plus{
   padding-top: 30px;
+  padding-bottom: 50px;
   text-align: center;
   font-size: 30px;
 }
@@ -62,14 +63,21 @@ table {
 }
 
 #notice {
-  color: white;
-  font-family: Courier;
-  font-style: italic;
+  color: red;
+  font-family: Arial Narrow, sans-serif;
   font-size: 14px;
   text-align: center;
   margin: auto;
   padding-top: 20px;
+  padding-bottom: 20px;
 
+}
+
+.noone {
+  font-family: Arial Narrow, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin: auto;
 }
 
 .field_with_errors {
@@ -86,6 +94,7 @@ img {
 
 td {
   padding-left: 30px;
+  padding-bottom: 5px;
 }
 
 th {
@@ -110,7 +119,9 @@ th {
 }
 
 .bas {
-  position: absolute; bottom: 0; left: 0; right: 0;
+  position: absolute; 
+  bottom: 0; left: 0; right: 0;
+  position: fixed;
   text-align: center; 
   background-color: #17202a;
 }
@@ -120,6 +131,18 @@ th {
   margin: auto;
   font-size: 25px;
   padding-top: 25px;
+}
+
+.recherche {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.yt {
+  height: 50px;
+  width: 100px;
+  margin: auto;
+  padding-bottom: 25px;
 }
 
 #error_explanation {

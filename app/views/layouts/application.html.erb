@@ -7,11 +7,6 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<%= form_tag(musics_path, :method => "get", id: "search-form") do %>
-    <%= text_field_tag :search, params[:search], placeholder: "Musique, Artiste, Genre" %>
-    <%= submit_tag "Recherche", :name => nil %>
-	<% end %>
-
 <%= yield %>
 	<footer>
 		<div class="bas"><a href="https://www.github.com/RomainCTD">Accès à mon Github</a> | CHARTAUD Romain</div> 

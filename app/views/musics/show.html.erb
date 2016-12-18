@@ -1,7 +1,15 @@
 <h1>DÉTAILS</h1>
 
 <div class="cshow">
-	<img src="http://compassionmovement.org/wp-content/uploads/2016/02/Feb-web-yellow-line.png"/>
+<img src="http://compassionmovement.org/wp-content/uploads/2016/02/Feb-web-yellow-line.png"/>
+<p id="notice"><%= notice %></p>
+	
+	<div class="yt">
+		<a href="https://www.youtube.com/results?search_query=<%= @music.titre %>+<%= @music.artiste %>" target="_blank">
+			<img src="https://www.youtube.com/yt/brand/media/image/YouTube-icon-full_color.png"/>
+		</a>
+	</div>
+	
 	<p>
   		<strong>Titre:</strong>
   		<%= @music.titre %>
@@ -20,4 +28,3 @@
 <div class="bk">
 <%= link_to '⧼', musics_path %>
 </div>
-<p id="notice"><%= notice %></p>
