@@ -1,7 +1,7 @@
 <%= form_for(@music) do |f| %>
   <% if @music.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@music.errors.count, "error") %> prohibited this music from being saved:</h2>
+      <h2><%= pluralize(@music.errors.count, "error") %> Sauvegarde interdite de cette musique:</h2>
 
       <ul>
       <% @music.errors.full_messages.each do |message| %>

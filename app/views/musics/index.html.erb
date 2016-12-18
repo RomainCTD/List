@@ -1,7 +1,11 @@
-<p id="notice"><%= notice %></p>
-
 <h1>LISTE DE MUSIQUES</h1>
+
 <img src="http://compassionmovement.org/wp-content/uploads/2016/02/Feb-web-yellow-line.png"/>
+
+<%= form_tag '', :method => :get do %>
+  <%= text_field_tag :value_one %>
+  <%= submit_tag 'Filtrer' %>
+<% end %>
 <table>
   <thead>
     <tr>
@@ -28,4 +32,5 @@
 
 <br>
 
-<div class="plus"><%= link_to '✛', new_music_path %></div>
+<div class="plus"><%= link_to '㊉', new_music_path %></div>
+<p id="notice"><%= notice %></p>

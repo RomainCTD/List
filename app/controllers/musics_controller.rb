@@ -42,7 +42,7 @@ class MusicsController < ApplicationController
   def update
     respond_to do |format|
       if @music.update(music_params)
-        format.html { redirect_to @music, notice: 'Musique mis à jour' }
+        format.html { redirect_to @music, notice: 'Musique mise à jour' }
         format.json { render :show, status: :ok, location: @music }
       else
         format.html { render :edit }

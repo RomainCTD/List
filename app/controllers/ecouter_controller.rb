@@ -1,2 +1,0 @@
-class EcouterController < ApplicationController
-end

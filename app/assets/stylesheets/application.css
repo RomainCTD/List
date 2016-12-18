@@ -1,13 +1,21 @@
 h1 {
 	margin: auto;
 	text-align: center;
-	font-family: helvetica, sans-serif;
+	font-family: Verdana, sans-serif;
 	margin-top: 13px;
+  padding-top: 30px;
 }
 
 body {
   background-image: url("http://img11.hostingpics.net/pics/174172back1blurlum.jpg");
-    background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  background-size: cover; 
+  -moz-background-size: 100% 100%;     /* Gecko */
+  -o-background-size: 100% 100%;        /* Opera  */
+  -webkit-background-size: 100% 100%;   /* Safari  */
+  background-size: 100% 100%;           /* Firefox */ 
   color: white;
   font-family: helvetica, sans-serif;
   font-size: 13px;
@@ -28,6 +36,7 @@ pre {
   font-size: 11px;
 }
 
+
 a {
   color: yellow;
   text-decoration: none;
@@ -47,11 +56,6 @@ a {
   font-size: 30px;
 }
 
-strong {
-  margin: auto;
-  text-align: center;
-}
-
 table {
 	margin: auto;
 }
@@ -59,7 +63,12 @@ table {
 #notice {
   color: white;
   font-family: Courier;
-  font-style: italic, bold;
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+
 }
 
 .field_with_errors {
@@ -77,6 +86,35 @@ img {
 td {
   padding-left: 45px;
 }
+
+.cshow {
+  margin: auto;
+  text-align: center;
+}
+
+.cedit {
+  margin: auto;
+  text-align: center;
+}
+
+.cnew {
+  margin: auto;
+  text-align: center;
+}
+
+.bas {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  text-align: center; 
+  background-color: #17202a;
+}
+
+.bk {
+  text-align: center;
+  margin: auto;
+  font-size: 25px;
+  padding-top: 25px;
+}
+
 
 #error_explanation {
   width: 450px;

@@ -1,20 +1,23 @@
+<h1>DÉTAILS</h1>
+
+<div class="cshow">
+	<img src="http://compassionmovement.org/wp-content/uploads/2016/02/Feb-web-yellow-line.png"/>
+	<p>
+  		<strong>Titre:</strong>
+  		<%= @music.titre %>
+	</p>
+
+	<p>
+  		<strong>Artiste:</strong>
+ 		<%= @music.artiste %>
+	</p>
+
+	<p>
+  		<strong>Genre:</strong>
+  		<%= @music.genre %>
+	</p>
+</div>
+<div class="bk">
+<%= link_to '⧼', musics_path %>
+</div>
 <p id="notice"><%= notice %></p>
-<H1>DETAILS</H1>
-<img src="http://compassionmovement.org/wp-content/uploads/2016/02/Feb-web-yellow-line.png"/>
-<p>
-  <strong>Titre:</strong>
-  <%= @music.titre %>
-</p>
-
-<p>
-  <strong>Artiste:</strong>
-  <%= @music.artiste %>
-</p>
-
-<p>
-  <strong>Genre:</strong>
-  <%= @music.genre %>
-</p>
-
-<%= link_to 'Edit', edit_music_path(@music) %> |
-<%= link_to 'Back', musics_path %>
