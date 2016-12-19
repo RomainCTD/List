@@ -1,9 +1,10 @@
 h1 {
 	margin: auto;
 	text-align: center;
-	font-family: Verdana, sans-serif;
+  font-family: 'Unica One', cursive;
 	margin-top: 13px;
-  padding-top: 30px;
+  padding-top: 26px;
+  font-size: 30px;
 }
 
 body {
@@ -178,5 +179,6 @@ th {
     font-size: 12px;
     list-style: square;
   }
+
 }
 

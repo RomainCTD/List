@@ -1,4 +1,4 @@
-<h1>LISTE DE MUSIQUES </h1>
+<h1>T o D o L i s t <font style="color:#A4A4A4;">e n n i n g</font></h1>
 
 <img src="http://compassionmovement.org/wp-content/uploads/2016/02/Feb-web-yellow-line.png"/>
   <div id="help"><a href="javascript:showPopup();" title="㊉ Ajouter &nbsp;&nbsp;&nbsp;  ⏵ Écouter &nbsp;&nbsp;&nbsp; ✎ Éditer &nbsp;&nbsp;&nbsp; ✘ Supprimer">
@@ -16,6 +16,7 @@
   </thead>
     
   <tbody>
+
     <div class="recherche">
       <%= form_tag(musics_path, :method => "get", id: "search-form") do %>
       <%= text_field_tag :search, params[:search], placeholder: "Titre de musique, Artiste, Genre" %>
@@ -38,7 +39,7 @@
         <td><%= music.artiste %></td>
         <td><%= music.genre %></td>
         <td><%= link_to '✎', edit_music_path(music) %></td>
-        <td><%= link_to '✘', music, method: :delete, data: { confirm: 'Es-tu sûr ?' } %></td>
+        <div id="supp"><td><%= link_to '✘', music, method: :delete, data: { confirm: 'Es-tu sûr ?' } %></td></div>
       </tr>
     <% end %>
   </tbody>
@@ -48,5 +49,3 @@
 
 
 <div class="plus"><%= link_to '㊉', new_music_path %></div>
-
-
