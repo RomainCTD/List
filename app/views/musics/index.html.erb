@@ -1,7 +1,8 @@
 <h1>T o D o L i s t <font style="color:#A4A4A4;">e n n i n g</font></h1>
 
 <img src="http://compassionmovement.org/wp-content/uploads/2016/02/Feb-web-yellow-line.png"/>
-  <div id="help"><a href="javascript:showPopup();" title="㊉ Ajouter &nbsp;&nbsp;&nbsp;  ⏵ Écouter &nbsp;&nbsp;&nbsp; ✎ Éditer &nbsp;&nbsp;&nbsp; ✘ Supprimer">
+  <div id="help" title="Plateforme communautaire de découverte musicale. (triée par date d'ajout)
+  ↳ Ajoutez, Filtrez, Recherchez, Découvrez, Écoutez : &nbsp en quelques clicks !">
     <img src="http://www.freeiconspng.com/uploads/help-icon-12.png"/>
   </a></div>
 <table>
@@ -19,14 +20,14 @@
 
     <div class="recherche">
       <%= form_tag(musics_path, :method => "get", id: "search-form") do %>
-      <%= text_field_tag :search, params[:search], placeholder: "Titre de musique, Artiste, Genre" %>
+      <%= text_field_tag :search, params[:search], placeholder: "Votre Artiste/genre favoris" %>
       <%= submit_tag "🔍", :name => nil %>
       <% end %>
     </div>
 
     <div class="noone"
       <% if @musics.blank? %>
-        <h4>Il n'y a pas de titres, artistes ou genres correspondants à : <%= params[:search] %></h4>
+        <h4>Il n'y a pas d'artistes ou de genres correspondants à : <%= params[:search] %></h4>
       <% end %>
     </div>
 
@@ -34,12 +35,12 @@
 
     <% @musics.each do |music| %>
       <tr>
-        <td><%= link_to '⏵', music %></td>
+        <td title="Écouter"><%= link_to '⏵', music %></td>
         <td><%= music.titre %></td>
         <td><%= music.artiste %></td>
         <td><%= music.genre %></td>
-        <td><%= link_to '✎', edit_music_path(music) %></td>
-        <div id="supp"><td><%= link_to '✘', music, method: :delete, data: { confirm: 'Es-tu sûr ?' } %></td></div>
+        <td title="Éditer"><%= link_to '✎', edit_music_path(music) %></td>
+        <div id="supp"><td title="Supprimer"><%= link_to '✘', music, method: :delete, data: { confirm: 'Es-tu sûr ?' } %></td></div>
       </tr>
     <% end %>
   </tbody>
@@ -47,5 +48,4 @@
 
 <br>
 
-
-<div class="plus"><%= link_to '㊉', new_music_path %></div>
+<span class="blink"><div class="plus"><%= link_to '✚', new_music_path %></div></span>

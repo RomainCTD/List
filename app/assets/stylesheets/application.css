@@ -1,3 +1,32 @@
+.plus{
+  padding-top: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+  padding-left: 50%;
+  font-size: 32px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+
+.blink {
+    animation-name: blinker;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+.blink:hover {
+    animation-play-state: paused;
+}
+
+@keyframes blinker {
+    0% {opacity: 1.0}
+    50% {opacity: 0.3}
+    100% {opacity: 1.0}
+  }
+
+
 h1 {
 	margin: auto;
 	text-align: center;
@@ -50,13 +79,6 @@ a {
   &:hover {
     color: white;
   }
-}
-
-.plus{
-  padding-top: 30px;
-  padding-bottom: 50px;
-  text-align: center;
-  font-size: 30px;
 }
 
 #help {
@@ -179,6 +201,7 @@ th {
     font-size: 12px;
     list-style: square;
   }
+
 
 }
 
