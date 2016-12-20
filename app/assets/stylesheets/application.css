@@ -71,11 +71,6 @@ pre {
 a {
   color: yellow;
   text-decoration: none;
-
-  &:visited {
-    color: white;
-  }
-
   &:hover {
     color: white;
   }
