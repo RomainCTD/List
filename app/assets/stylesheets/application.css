@@ -22,8 +22,26 @@
 
 @keyframes blinker {
     0% {opacity: 1.0}
-    50% {opacity: 0.3}
+    50% {opacity: 0.4}
     100% {opacity: 1.0}
+  }
+
+.blinknew {
+    animation-name: blinkernew;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+.blinknew:hover {
+    animation-play-state: paused;
+}
+
+@keyframes blinkernew {
+    0% {opacity: 0.5}
+    60% {opacity: 1}
+    80% {opacity: 1}
+    100% {opacity: 0.5}
   }
 
 
@@ -70,7 +88,7 @@ pre {
 
 a {
   color: yellow;
-  text-decoration: none;
+  text-decoration: none;  
   &:hover {
     color: white;
   }
@@ -92,20 +110,23 @@ table {
 
 #notice {
   color: red;
-  font-family: Arial Narrow, sans-serif;
+  font-family: helvetica, sans-serif;
   font-size: 14px;
   text-align: center;
   margin: auto;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-style: italic;
 
 }
 
 .noone {
-  font-family: Arial Narrow, sans-serif;
-  font-size: 14px;
+  color: red;
+  font-family: helvetica, sans-serif;
+  font-size: 14 px;
   text-align: center;
   margin: auto;
+  font-style: italic;
 }
 
 .field_with_errors {
@@ -166,11 +187,32 @@ th {
   padding-bottom: 25px;
 }
 
-.yt {
+.youtube {
   height: 50px;
   width: 100px;
   margin: auto;
-  padding-bottom: 25px;
+  padding-bottom: 40px;
+  display: inline-block;
+  padding-right: 13px;
+
+}
+
+.soundcloud {
+  height: 50px;
+  width: 100px;
+  margin: auto;
+  padding-bottom: 40px;
+  display: inline-block;
+  padding-left: 13px;
+  
+}
+
+.spaceform {
+  line-height: 30px;
+}
+
+.actions {
+  padding-top: 40px;
 }
 
 #error_explanation {

@@ -4,11 +4,21 @@
 <img src="http://compassionmovement.org/wp-content/uploads/2016/02/Feb-web-yellow-line.png"/>
 <p id="notice"><%= notice %></p>
 	
-	<div class="yt">
-		<a href="https://www.youtube.com/results?search_query=<%= @music.titre %>+<%= @music.artiste %>" target="_blank">
-			<img src="https://www.youtube.com/yt/brand/media/image/YouTube-icon-full_color.png"/>
-		</a>
+	<div class="youtube">
+		<span class="blinknew">
+			<a href="https://www.youtube.com/results?search_query=<%= @music.titre %>+<%= @music.artiste %>" target="_blank">
+				<img src="https://www.youtube.com/yt/brand/media/image/YouTube-icon-full_color.png"/>
+			</a>
+		</span>
 	</div>
+	<div class="soundcloud">
+		<span class="blinknew">
+			<a href="https://soundcloud.com/search?q=<%= @music.titre %>+<%= @music.artiste %>" target="_blank">
+				<img src="https://upload.wikimedia.org/wikipedia/fr/thumb/b/bb/SoundCloud_logo.png/1280px-SoundCloud_logo.png">
+			</a>
+		</span>
+	</div>
+
 	
 	<p>
   		<strong>Titre:</strong>
@@ -26,5 +36,5 @@
 	</p>
 </div>
 <div class="bk">
-<%= link_to '⧼', musics_path %>
+<%= link_to '⇦', musics_path %>
 </div>

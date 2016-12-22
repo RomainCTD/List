@@ -5,6 +5,14 @@
   ↳ Ajoutez, Filtrez, Recherchez, Découvrez, Écoutez : &nbsp en quelques clicks !">
     <img src="http://www.freeiconspng.com/uploads/help-icon-12.png"/>
   </a></div>
+
+ <div class="recherche">
+      <%= form_tag(musics_path, :method => "get", id: "search-form") do %>
+      <%= text_field_tag :search, params[:search], placeholder: "Votre Artiste/genre favoris" %>
+      <%= submit_tag "🔍", :name => nil %>
+      <% end %>
+    </div>
+  
 <table>
   <thead>
     <tr>
@@ -17,13 +25,6 @@
   </thead>
     
   <tbody>
-
-    <div class="recherche">
-      <%= form_tag(musics_path, :method => "get", id: "search-form") do %>
-      <%= text_field_tag :search, params[:search], placeholder: "Votre Artiste/genre favoris" %>
-      <%= submit_tag "🔍", :name => nil %>
-      <% end %>
-    </div>
 
     <div class="noone"
       <% if @musics.blank? %>
