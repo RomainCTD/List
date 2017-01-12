@@ -1,10 +1,28 @@
-<h1><font style="color:#A4A4A4;">T o D o </font>L i s t e n n i n g</h1>
+<h1><font style="color:#A4A4A4;">T o D o </font>L i s t e n i n g</h1>
 
 <img src="http://compassionmovement.org/wp-content/uploads/2016/02/Feb-web-yellow-line.png"/>
-  <div id="help" title="Plateforme communautaire de découverte musicale. (triée par date d'ajout)
-  ↳ Ajoutez, Filtrez, Recherchez, Découvrez, Écoutez : &nbsp en quelques clicks !">
-    <img src="http://www.freeiconspng.com/uploads/help-icon-12.png"/>
-  </a></div>
+
+<!-- http://www.freeiconspng.com/uploads/help-icon-12.png -->
+    
+    <!-- popup -->
+    <input type="checkbox" id="popup__1" class="popup__check" />
+    <div class="popup__base">
+      <label for="popup__1" class="popup__bg"></label>
+      <div class="popup__inner">
+        <div class="popup__calign">
+          <label for="popup__1" class="popup__close">+</label>
+        </div>
+        <div class="popup__textbox">
+          <h1>Informations</h1>
+          <p style="color:black">
+            Plateforme communautaire de découverte musicale. (triée par date d'ajout). Ajoutez, Filtrez, Recherchez, Découvrez, Écoutez : en quelques clicks !
+          <p>
+        </div>
+      </div>
+    </div>
+
+    <a><label class="trigger" for="popup__1" style="font-family:verdana;">?</label></a>
+    <!-- fin de la popup -->
 
  <div class="recherche">
       <%= form_tag(musics_path, :method => "get", id: "search-form") do %>
