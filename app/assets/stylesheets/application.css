@@ -4,6 +4,7 @@
   display: block;
   margin-left: 96%;
   cursor: pointer;
+  width: 10px;
 }
 
 .popup__textbox{
@@ -115,7 +116,7 @@
   text-align: right;
   cursor: pointer;
   color: red;
-  opacity: 0.8;
+  opacity: 0.;
   padding-top: 15px;
 }
 
@@ -296,6 +297,7 @@ th {
 .recherche {
   text-align: center;
   padding-bottom: 25px;
+  margin:auto;
 }
 
 .youtube {

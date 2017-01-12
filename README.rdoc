@@ -1,4 +1,4 @@
-== ToDoListenning
+== ToDoListening
 
 Plateforme communautaire musicale, pour découvrir des nouveautés (en lien avec vos genre musicaux), ou bien faire partager vos titres favoris.
 
